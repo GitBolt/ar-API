@@ -12,12 +12,10 @@ app = FastAPI()
 
 # origins that are allowed
 origins = [
-    "http://localhost.tiangolo.com",
-    "https://localhost.tiangolo.com",
-    "http://localhost",
     "http://localhost:8080",
 ]
 
+# Adding origin links
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -45,9 +43,8 @@ async def ParseText(url: str = ""):
     value = {
         "title": article.title,
         "article": article.text,
-        "images": article.images,
+        "images": article.top_image,
         "summary": article.summary,
-        "top_image": article.top_image
     }
 
     return value
