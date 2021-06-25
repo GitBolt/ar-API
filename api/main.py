@@ -12,7 +12,10 @@ app = FastAPI()
 
 # origins that are allowed
 origins = [
-    "http://localhost:8080",
+    "https://ansh-test-api.herokuapp.com/",
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+
 ]
 
 # Adding origin links

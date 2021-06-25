@@ -11,6 +11,7 @@ newspaper3k = "*"
 [dev-packages]
 ipykernel = "*"
 autopep8 = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.8"
