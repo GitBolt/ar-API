@@ -1,7 +1,30 @@
 from fastapi import FastAPI
-from newspaper import Article      # Modules for parsing an article
+
+# Modules for parsing an article
+from newspaper import Article
+# Cors import
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+
+# CORS Setup
+
+# origins that are allowed
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get('/')
@@ -25,7 +48,6 @@ async def ParseText(url: str = ""):
         "images": article.images,
         "summary": article.summary,
         "top_image": article.top_image
-
     }
 
     return value
