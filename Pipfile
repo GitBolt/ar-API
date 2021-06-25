@@ -19,8 +19,11 @@ starlette = "==0.14.2"
 typing-extensions = "==3.10.0.0"
 urllib3 = "==1.26.5"
 uvicorn = "==0.14.0"
+newspaper3k = "*"
 
 [dev-packages]
+ipykernel = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"
