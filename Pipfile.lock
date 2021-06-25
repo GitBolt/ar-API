@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1e99d8d938eaf168bd15a35235722bfeaf1f01e26e72c43719bdebd54339b5be"
+            "sha256": "85e7e6b908c6fef4bf3277651b19139711ed5b35dead3ff453a4516519b1e5ed"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -109,6 +109,13 @@
             ],
             "index": "pypi",
             "version": "==2.10"
+        },
+        "iris": {
+            "hashes": [
+                "sha256:69f0542616f237569c7319b1eab946c94c3b48a9697c732ab4b4b5ecb55da569"
+            ],
+            "index": "pypi",
+            "version": "==1.0.7"
         },
         "jieba3k": {
             "hashes": [
